@@ -1,14 +1,6 @@
-# Swisstronik Tesnet Techinal Task 5 (Deploy Private NFT)
+# Swisstronik Tesnet 2.0 // Technical Task 05.
 
-link : [Click!](https://www.swisstronik.com/testnet2/dashboard)
-
-Feel free donate to my EVM address
-
-EVM :
-
-```bash
-0x9902C3A98Df4b240ad5496cC26F89bAb8058f4aE
-```
+Link : [Click!](https://www.swisstronik.com/testnet2/dashboard)
 
 ## Steps
 
@@ -59,7 +51,7 @@ contract PrivateNFT is ERC721, Ownable {
     event NFTMinted(address recipient, uint256 tokenId);
     event NFTBurned(uint256 tokenId);
 
-    constructor(address initialOwner) ERC721("IzzyPrivate", "IZZPRVT") Ownable(initialOwner) {}
+    constructor(address initialOwner) ERC721("Azuki", "AZUKI") Ownable(initialOwner) {}
 
     function mintNFT(address recipient) public onlyOwner returns (uint256) {
         _currentTokenId += 1;
@@ -103,32 +95,8 @@ npm run deploy
 npm run mint
 ```
 
-### 8. Finsihed
+### Finished.
 
-- Open the deployed-adddress.ts (location in utils folder)
-- Copy the address and paste the address into testnet dashboard
-- push this project to your github and paste your repository link in testnet dashboard
-  
- #how to push ? 
-```bash
-git init
-```
-```bash
-git add .
-```
-```bash
-git remote set-url origin your_repo_link
-```
-```bash
-git branch -M main
-```
-```bash
-git push -u origin main
-```
+Github  : [sanztiva](https://github.com/sanztiva)
 
-by :
-github : [Mnuralim](https://github.com/Mnuralim)
-twitter : @Izzycracker04
-telegram : @fitriay19
-
-//0x5cED43F3224e3F7C7EFA6ABdE9A960A44E3B2dD9// ignore this
+Address Testnet Swisstronik 0x499da0675ddAE1589c6A4FC9BD6E254b4E8844dB
